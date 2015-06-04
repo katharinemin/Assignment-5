@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <div id="Autumn & Bubba"></div>
+
+
+    <script>
+      // alert
+      alert("");
+      document.getElementById("Autumn & Bubba").innerHTML = "Autumn & Bubba!";
+
+      // exercises, js basics/slide 25
+      var x = 6;
+      var y = 20;
+      var z = x + y;
+
+      console.log(x + y);
+      console.log(z);
+
+      var one = "hello";
+      var two = "shirmung";
+      var three = one + " " + two;
+
+      alert(one + " " + two);
+      alert(three);
+
+      var colors = ["yellow", "green", "blue"];
+      var fruits = ["apple", "banana"];
+
+      var fruitColors = [colors, fruits];
+
+      console.log(colors[1]);
+      console.log(fruitColors[1][1]);
+      console.log(fruitColors[0][2]);
+  
+      // exercises, js logic-loops/slide 7
+      var x = 11;
+      var y = 10;
+
+      if (x < y) {
+        console.log(x + " is less than " + y);
+      } else {
+        console.log(x + " is not less than " + y);
+      }
+
+      var x = "x";
+      var y = "y";
+
+      if (x === y) {
+        console.log(x + " is equal to " + y);
+      } else {
+        console.log(y + " is equal to " + x);
+      }
+
+      // exercises, js logic-loops/slide 12
+      function tellName(name) {
+        return alert(name);
+      }
+
+      tellName("john");
+
+      function printToConsole() {
+        return console.log("unicorn");
+      }
+
+      printToConsole();
+
+      function openDoor(number) {
+        if (number === 0) {
+          return "you've won a pony";
+        } else if (number === 1) {
+          return "you've won charcoal";
+        } else if (number === 2) {
+          return "you've won absolutely nothing";
+        } else {
+          return "that door doesn't exist, try again";
+        }
+      }
+
+      console.log(openDoor(1));
+      console.log(openDoor(100000));
+
+      // exercise for loop, js logic-loops/slide 18
+      var shapes = ["circle", "square"];
+      var colors = ["green", "yellow"];
+
+      var together = [shapes, colors];
+
+      // iterating over a 2x2 array
+      // prints circle, square, green, yellow
+      for (var i = 0; i < 2; i++) {
+        for (var j = 0; j < 2; j++) {
+          console.log(together[i][j]);
+        }
+      }
+
+      // reverses, prints yellow, green, square, circle
+      for (var i = 1; i > -1; i--) {
+        for (var j = 1; j > -1; j--) {
+          console.log(together[i][j]);
+        }
+      }
+
+      // exercise while loop, js logic-loops/slide 20
+      var i = 99;
+
+      while (i >= 0) {
+        console.log(i + " bottles of root beer on the wall, " + i + " bottles of root beer...take one down, pass it around ");
+        i--;
+      }
+    </script>
+  </body>
+</html>
